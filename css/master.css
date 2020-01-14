@@ -1,0 +1,166 @@
+
+/*#### The Logo ####*/
+/*#### Very Old school ####*/
+
+.site-id {
+  display: flex;
+}
+
+.logo {
+  background: #ffffff;
+  top : 50%;
+  left : 25%;
+  z-index: 1;
+}
+
+.site-title {
+  top : 50%;
+  text-align: center;
+  margin-left: 0.5em;
+}
+
+/*#### Navigation ####*/
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+header nav li a {
+  text-align: center;
+  color : #ffffff;
+  font-size: 2em;
+}
+
+header nav li a:hover {
+  color : #aaaaaa;
+}
+
+
+/*#### Columns ####*/
+/*#### reading ####*/
+
+.main-content {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10em 1em;
+  column-count: 4;
+  column-gap: 1em;
+}
+
+
+/*#### Teaser List ####*/
+/*#### Homepage ####*/
+
+.teaser-list {
+  color: #ffffff;
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-list-item {
+  margin: 1em;
+  flex-basis: 21em;
+  flex-grow: 1;
+}
+
+.product-list-item img {
+  width: 100%;
+}
+
+.product-list-item a {
+  color : #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.product-list-item a:hover {
+  color : #aaaaaa;
+}
+
+/*### dossier-top Styles ###*/
+
+.dossier-top {
+  overflow: hidden;
+  min-height: 45em;
+  text-align: center;
+}
+
+.dossier-top img {
+  float : left;
+  height: 45em;
+  width : 50%;
+  object-fit: cover;
+}
+
+.dossier-top-content {
+  float : right;
+  height: 45em;
+  width : 50%;
+  display: flex;
+  padding : 1em 2em;
+}
+
+@media (max-width: 915px){
+  	.dossier-top img {
+		width:100%;
+	}
+  	.dossier-top-content {
+    	width:100%;
+  	}
+}
+
+.dossier-top-content div {
+  background-color: #000000;
+  color: #ffffff;
+  margin : auto;
+}
+
+.dossier-top-content a {
+  color : #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.dossier-top-content a:hover {
+  color : #aaaaaa;
+}
+
+.strip-image {
+  margin-bottom: 1em;
+}
+
+.strip-image img {
+  height: 9em;
+  width: 96em;
+  object-fit: cover;
+}
+
+
+
+/*### FOOTER Styles ###*/
+
+footer {
+  background: #000000;
+  color : #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+footer h2 {
+  font-size: 2em;
+  color : #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}

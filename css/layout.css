@@ -1,0 +1,143 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 480px){
+  body{
+    background-color: #333333;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  body{
+    background-color: #222222;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  body{
+    background-color: #111111;
+  }
+}
+
+@media (min-width: 1025px){
+  body{
+    background-color: #000000;
+  }
+}
+
+header {
+  background-color: #000000;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*header:after {
+
+}*/
+
+header nav {
+  min-height: 2em;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 1em;
+  min-width: 6em;
+}
+
+.site-id {
+}
+
+
+/*### Hero Block per page type ###*/
+
+.hero {
+  min-height: 37em;
+  background-color: #000000;
+  background-image: url("images/bg-lanscape-01.jpg");
+  background-position-x : center;
+  background-position-y : center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.introduction {
+  color : #ffffff;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2em;
+}
+
+.introduction h2 {
+  text-align: center;
+}
+
+/*## For the Home Page ##*/
+
+.home .hero {
+  position : relative;
+}
+
+.home .introduction {
+  color : #ffffff;
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*## For the Dossier Page ##*/
+
+.dossier .hero  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*## list Page ##*/
+
+.gorilla-list {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1em;
+}
+
+.goilla-list-item {
+
+}
+
+.gorilla-list img {
+  width: 100%;
+}
+
+.gorilla-list a {
+  color : #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.gorilla-list a:hover {
+  color : #aaaaaa;
+}
+
+footer {
+  padding-left: 1em;
+}

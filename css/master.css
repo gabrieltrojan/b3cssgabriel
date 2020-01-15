@@ -4,6 +4,7 @@
 
 .site-id {
   display: flex;
+  z-index: 102;
 }
 
 .logo {
@@ -17,6 +18,76 @@
   top : 50%;
   text-align: center;
   margin-left: 0.5em;
+}
+
+.menu-toggle{
+  display: none;
+  margin-top: 4em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.menu-toggle .burger-breads span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.menu-close{
+  display: none;
+  margin-top: 1.5em;
+  margin-right: 1em;
+}
+
+.menu-close .burger-breads span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ffffff;
+}
+
+.menu-close .burger-breads span:nth-child(2){
+    transform: rotate(135deg) translate(-6px, 9px);
+}
+
+.menu-close .burger-breads span:nth-child(3){
+    opacity: 0;
+}
+
+@media (max-width: 842px){
+    .menu-toggle {
+    display: block;
+  }
+  .main-menu {
+    position: absolute;
+    right:-100%;
+    top: 0;
+    padding-top: 124px;
+    z-index: 100;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid white; 
+  }
+  .main-menu:target {
+    right: 0;
+  }
+  .menu-close {
+    z-index: 101;
+    display: block;
+    position: absolute;
+    right : 0;
+    top: 129px;
+  }
 }
 
 /*#### Navigation ####*/

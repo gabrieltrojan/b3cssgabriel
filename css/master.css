@@ -284,3 +284,7 @@ footer .perso:hover{
     transform: scale(1);
   }
 }
+
+html {
+  overflow-x: hidden
+}

@@ -235,3 +235,52 @@ footer h2 {
 footer a {
   color: #ffffff;
 }
+
+/*footer img{
+  margin: 1em;
+  max-width: 150px;
+  animation-duration: 4s;
+  animation-name: appearIn;
+  transition : all 4s ease;
+}
+
+
+footer:hover img{
+  transform: translateX(200px);
+}
+
+footer img:after{
+  animation-duration: 4s;
+  animation-name: appearIn;
+  transition : all 4s ease;
+}*/
+
+.perso{
+  transition : transform 1s ease, border-radius 1s ease;
+  border: 1px solid #ffffff;
+  overflow:hidden;
+  margin: 32px 0 16px 16px;
+  width: 150px;
+  height: 150px;
+}
+
+footer:hover .perso{
+  border-radius: 100%;
+}
+
+footer .perso:hover{
+  animation-duration: 4s;
+  animation-name: appearIn;
+}
+
+@keyframes appearIn {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
